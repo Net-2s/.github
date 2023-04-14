@@ -1,30 +1,10 @@
-## Guide de codage
+# Net-2s Coding guideline
 
-Ceci est le guide codae qui doit être utilisé par tout les développeurs Odoo de Net-2s. Il est adapté du guide [officiel de codage de Odoo](https://www.odoo.com/documentation/16.0/contributing/development/coding_guidelines.html). Ce code doit être utilisé pour tout les modules qui seront developpés au seins de Net-2s.
+These are the coding guideline that we'll use at Net-2s for all our module development. This guide is adapted from the [official Odoo guideline](https://www.odoo.com/documentation/16.0/contributing/development/coding_guidelines.html). You can check it for further details.
 
-These guidelines should be applied to every new module and to all new development.
+## Module structure
 
-.. warning::
-
-    When modifying existing files in **stable version** the original file style
-    strictly supersedes any other style guidelines. In other words please never
-    modify existing files in order to apply these guidelines. It avoids disrupting
-    the revision history of code lines. Diff should be kept minimal. For more
-    details, see our `pull request guide <https://odoo.com/submit-pr>`_.
-
-.. warning::
-
-    When modifying existing files in **master (development) version** apply those
-    guidelines to existing code only for modified code or if most of the file is
-    under revision. In other words modify existing files structure only if it is
-    going under major changes. In that case first do a **move** commit then apply
-    the changes related to the feature.
-
-Module structure
-================
-
-Directories
------------
+### Directories
 
 A module is organized in important directories. Those contain the business logic;
 having a look at them should make you understand the purpose of the module.
@@ -42,8 +22,7 @@ Other optional directories compose the module.
 - *tests/* : contains the Python tests
 
 
-File naming
------------
+### File naming
 
 File naming is important to quickly find information through all odoo addons.
 This section explains how to name files in a standard odoo module. As an
