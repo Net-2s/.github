@@ -6,7 +6,7 @@
 .. |DATE| replace:: 2023/06/05
 
 .. contents:: Table of contents
-    :depth: 4
+    :depth: 1
 
 .. sectnum::
 
@@ -16,15 +16,11 @@
 Introduction
 ************
 
-This page introduces the coding guidelines for projects hosted under OCA. These
+This page introduces the coding guidelines for Net-2s projects. These
 guidelines aim to improve the quality of the code: better readability of
 source, better maintainability, better stability and fewer regressions.
 
-These are loosely based on the `Odoo Guidelines <https://www.odoo.com/documentation/11.0/reference/guidelines.html>`_
-and `Old Odoo Guidelines <https://doc.odoo.com/contribute/15_guidelines/coding_guidelines_framework.html>`_
-with adaptations to improve their guidelines and make them more suitable for
-this project's own needs. Readers used to the Odoo Guidelines can skip to the
-`Differences With Odoo Guidelines <#id1>`_ section.
+These are based on the `OCA Contributions guidelines <https://github.com/OCA/odoo-community.org/blob/master/website/Contribution/CONTRIBUTING.rst>`_ with adaptations to tailor them for Net-2s projects.
 
 Modules
 =======
@@ -38,23 +34,12 @@ Modules
   `CC` is its country code. I.e. `l10n_es_pos`.
 * When extending an Odoo module, prefix yours with that module's name. I.e.
   `mail_forward`.
-* When combining an Odoo module with another from OCA, Odoo's name goes before.
-  I.e., if you want to combine Odoo's `crm` with OCA's `partner_firstname`, the
-  name should be `crm_partner_firstname`.
-* Use the `description template <https://github.com/OCA/maintainer-tools/tree/master/template/module>`_
-  but remove sections with no meaningful content.
 * In `__manifest__.py`:
 
   * Avoid empty keys
-  * Make sure it has the `license` and `images` keys.
-  * Make sure the text `,Odoo Community Association (OCA)` is appended to the
-    `author` text.
-  * The `website` key must be `https://github.com/OCA/<repo>`,
-    so as to provide the most relevant link to discover more information about the addon.
-    That link shows the repository README. Alternatively `https://github.com/OCA/<repo>/tree/<branch>/<addon>`
-    may be used, to provide a direct link to the addon README, which includes proper credits
-    (authors, contributors and theirs companies), and links to the relevant information on the OCA website.
-* Don't use your company logo or your corporate branding. Using the author and the list of contributors is enough for people to know about your employer/company and contact you.
+  * Make sure it has the `license` and `images` keys and the `licence` is `Odoo Proprietary License v1.0`.
+  * the `author` name should be `Net2s-<Your Full name>`
+  * The `website` key must be `https://github.com/Net-2s`,
 
 Version numbers
 ===============
