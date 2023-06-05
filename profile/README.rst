@@ -75,8 +75,6 @@ A module is organized in a few directories:
 * `controllers/`: contains controllers (http routes)
 * `data/`: data xml
 * `demo/`: demo xml
-* `examples/`: external files
-  `lib/`, ...
 * `models/`: model definitions
 * `reports/`: reporting models (BI/analysis), Webkit/RML print report templates
 * `static/`: contains the web assets, separated into `css/`, `js/`, `img/`,
@@ -162,7 +160,7 @@ The complete tree should look like this:
     |-- demo/
     |   `-- <inherited_model>.xml
     |-- migrations/
-    |   `-- 12.0.x.y.z/
+    |   `-- 14.0.x.y.z/
     |       |-- pre_migration.py
     |       `-- post_migration.py
     |-- models/
@@ -209,8 +207,7 @@ The complete tree should look like this:
     |   |-- __init__.py
     |   |-- <wizard_model>.py
     |   `-- <wizard_model>.xml
-    `-- examples/
-        `-- my_example.csv
+  
 
 Filenames should use only `[a-z0-9_]`
 
