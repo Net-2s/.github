@@ -293,7 +293,7 @@ Format
 
 When declaring a record in XML:
 
-* Indent using four spaces
+* Indent using one tabulation
 * Place `id` attribute before `model`
 * For field declarations, the `name` attribute is first. Then place the `value`
   either in the `field` tag, either in the `eval` attribute, and finally other
